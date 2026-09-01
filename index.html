@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çalışma Yönlendirme</title>
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.5;
+      color: #222;
+      text-align: center;
+    }
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 28px;
+    }
+    .small {
+      color: #666;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Yönlendiriliyorsunuz...</h2>
+    <p>Lütfen birkaç saniye bekleyiniz.</p>
+    <p class="small">Sayfa otomatik olarak açılmazsa bağlantıyı yeniden açabilirsiniz.</p>
+  </div>
+
+  <script>
+    const forms = [
+      "https://docs.google.com/forms/d/e/1FAIpQLScIXrhKdfdCr_YyjNOCbmYvf4olFf0oKoT9X4iaqQBa3_BblA/viewform?usp=header",
+      "https://docs.google.com/forms/d/e/1FAIpQLSdPhnQ3gCrRwq_NVLMlvdQtymMaahmXLcqeYMtjMh4qFNAudg/viewform?usp=publish-editor",
+      "https://docs.google.com/forms/d/e/1FAIpQLSevl1CzUj0QczVQDxD2p9l1FUQSUZgpjwoGnPnxT4Q04iKP_Q/viewform?usp=header",
+      "https://docs.google.com/forms/d/e/1FAIpQLSctkFHRV1kcz0ZlM1Re6jH9VEoz6IivPD6YzPDTTkD0C8WwrA/viewform?usp=header"
+    ];
+
+    const index = Math.floor(Math.random() * forms.length);
+    window.location.replace(forms[index]);
+  </script>
+</body>
+</html>
